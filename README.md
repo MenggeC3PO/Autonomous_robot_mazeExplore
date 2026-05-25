@@ -5,13 +5,13 @@ A lightweight autonomous robot for click-and-collect-style tasks developed for a
 It explores a maze-like environment, avoids obstacles, scans barcodes, and streams
 telemetry data over a 2.4 GHz wireless link. 
 <p align="center">
-  <img src="assets/EE3_Race2_3dmodel.gif" alt="3D model of the robot" width="480"/>
+  <img src="asset/EE3_Race2_3dmodel.gif" alt="3D model of the robot" width="480"/>
 </p>
 
 ## What the system does
 
 - **Dual-MCU architecture** — ESP32-S3 (FreeRTOS) handles navigation and motor
-  control; PIC18F handles barcode scanning, sensor perception and data relaying.
+  control; PIC18F handles barcode scanning and telemetry relay.
 - **Sensor** — 4× custom IR distance sensors, wheel encoders, and an MPU6050 IMU.
 - **Control** — per-motor PID over PWM @ 35 kHz into an L293D H-bridge.
 - **Navigation and Mapping** — Path finding with DFS and
